@@ -1,0 +1,79 @@
+
+.lenovo-content {
+  width: 280px;
+  overflow: hidden;
+  box-shadow: 0 0 3px #cccccc;
+  max-height: 260px;
+  z-index: 9999999;
+  background: white;
+  position: absolute;
+  box-sizing: border-box;
+  top: 10px;
+  left: 10px; }
+  .lenovo-content .lenovo-input {
+    padding-left: 40px;
+    outline: none;
+    height: 36px;
+    width: 218px;
+    border: 1px solid #eeeeee;
+    border-radius: 4px;
+    margin: 10px;
+    font-size: 14px; }
+  .lenovo-content .icon-search {
+    position: absolute;
+    top: 20px;
+    left: 18px;
+    z-index: 999;
+    color: #d5d5d5;
+    font-size: 18px; }
+  .lenovo-content .lenovo-list {
+    line-height: 40px;
+    max-height: 210px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin: 0px 1px 5px;
+    border-radius: 0 0 2px 2px; }
+    .lenovo-content .lenovo-list li {
+      padding-left: 10px;
+      width: 280px;
+      height: 40px;
+      line-height: 40px;
+      border-top: 1px solid #eee;
+      background-color: #fff;
+      box-sizing: border-box;
+      width: 280px;
+      cursor: pointer; }
+      .lenovo-content .lenovo-list li p {
+        padding: 0px 30px 0 10px;
+        position: relative;
+        border-top: #EEEEEE solid 1px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis; }
+        .lenovo-content .lenovo-list li p:first-child {
+          border-top: none; }
+        .lenovo-content .lenovo-list li p:hover {
+          cursor: pointer; }
+      .lenovo-content .lenovo-list li span {
+        max-width: 125px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        display: inline-block;
+        height: 30px;
+        line-height: 30px;
+        color: #999999;
+        font-size: 14px; }
+      .lenovo-content .lenovo-list li span.name {
+        padding-right: 50px;
+        padding-left: 20px; }
+    .lenovo-content .lenovo-list ul > li > p {
+      padding-left: 10px; }
+    .lenovo-content .lenovo-list ul > li > ul > li > p {
+      padding-left: 30px; }
+    .lenovo-content .lenovo-list ul > li > ul > li > ul > li > p {
+      padding-left: 50px; }
+    .lenovo-content .lenovo-list ul > li > ul > li > ul > li > ul > li > p {
+      padding-left: 70px; }
+    .lenovo-content .lenovo-list ul > li > ul > li > ul > li > ul > li > ul > li > p {
+      padding-left: 90px; }
