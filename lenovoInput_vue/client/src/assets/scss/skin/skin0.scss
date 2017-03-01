@@ -1,0 +1,43 @@
+@charset "UTF-8";
+/*
+ *  皮肤文件
+ *  薪人薪事绿
+ *
+ *$vi 整体背景
+ *$link a链接 可点击文字 tab色 知人颜色
+ *
+ */
+
+/* 常用色值定义 */
+
+$vi: #00695e;
+$link: #26a69a;
+
+$hoverLi: #eaf6f5;
+
+$btnBg: #26a69a;
+$btnActive:lighten($btnBg,2%);
+
+//知人成长/调薪记录的线和点
+$treePoint: #26a69a;
+$treeLine: rgba($treePoint,.1);
+
+//侧边栏
+$menuLink: #26a69a;
+$menuA: rgba(#fff,.5);
+$menuLine: rgba(#fff,.1);
+
+/* helper */
+$viColor:#26a69a;
+$menuHoverBg:rgba($viColor,.5);
+$menuBg:rgba($viColor,.1);
+
+//msg
+$darkColor:$link;
+$lightColor: lighten($link,20%);
+
+//custom-service
+$serviceBg: $link;
+
+@import "./base.scss";
+

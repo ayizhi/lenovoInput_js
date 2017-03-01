@@ -1,0 +1,151 @@
+/* To avoid CSS expressions while still supporting IE 7 and IE 6, use this script */
+/* The script tag referencing this file must be placed before the ending body tag. */
+
+/* Use conditional comments in order to target IE 7 and older:
+	<!--[if lt IE 8]><!-->
+	<script src="ie7/ie7.js"></script>
+	<!--<![endif]-->
+*/
+
+(function() {
+	function addIcon(el, entity) {
+		var html = el.innerHTML;
+		el.innerHTML = '<span style="font-family: \'xrxs\'">' + entity + '</span>' + html;
+	}
+	var icons = {
+		'icon-right': '&#xe900;',
+		'icon-left': '&#xe901;',
+		'icon-home': '&#xe902;',
+		'icon-employee': '&#xe903;',
+		'icon-payroll': '&#xe904;',
+		'icon-insuranc': '&#xe905;',
+		'icon-approval': '&#xe906;',
+		'icon-check': '&#xe907;',
+		'icon-assess': '&#xe908;',
+		'icon-recruitment': '&#xe909;',
+		'icon-statistics': '&#xe90a;',
+		'icon-notice': '&#xe90b;',
+		'icon-people': '&#xe920;',
+		'icon-edit2': '&#xe90c;',
+		'icon-employee-add': '&#xe90d;',
+		'icon-calculator': '&#xe90e;',
+		'icon-decrease': '&#xe90f;',
+		'icon-deduction': '&#xe910;',
+		'icon-security': '&#xe911;',
+		'icon-allowance': '&#xe912;',
+		'icon-cost': '&#xe913;',
+		'icon-work': '&#xe914;',
+		'icon-wages': '&#xe915;',
+		'icon-ruzhi2': '&#xe916;',
+		'icon-record': '&#xe917;',
+		'icon-archiving': '&#xe918;',
+		'icon-hr': '&#xe919;',
+		'icon-change': '&#xe91a;',
+		'icon-search': '&#xe91b;',
+		'icon-screen': '&#xe91c;',
+		'icon-set': '&#xe91d;',
+		'icon-Import': '&#xe91e;',
+		'icon-accounting': '&#xe91f;',
+		'icon-file': '&#xe977;',
+		'icon-annual-bonus': '&#xe969;',
+		'icon-download': '&#xe921;',
+		'icon-document1': '&#xe922;',
+		'icon-reminder2': '&#xe923;',
+		'icon-refresh': '&#xe924;',
+		'icon-vacation': '&#xe925;',
+		'icon-account1': '&#xe927;',
+		'icon-notice1': '&#xe928;',
+		'icon-phone': '&#xe967;',
+		'icon-quit': '&#xe976;',
+		'icon-person_center': '&#xe929;',
+		'icon-date': '&#xe92a;',
+		'icon-add': '&#xe92b;',
+		'icon-sum': '&#xe92c;',
+		'icon-add3': '&#xe92d;',
+		'icon-add22': '&#xe92e;',
+		'icon-choice': '&#xe92f;',
+		'icon-delete6': '&#xe930;',
+		'icon-fullscreen': '&#xe931;',
+		'icon-reduction': '&#xe932;',
+		'icon-delete5': '&#xe933;',
+		'icon-address': '&#xe934;',
+		'icon-appendix': '&#xe935;',
+		'icon-download2': '&#xe936;',
+		'icon-remarks': '&#xe944;',
+		'icon-edit': '&#xe937;',
+		'icon-hidden': '&#xe938;',
+		'icon-display': '&#xe939;',
+		'icon-visible': '&#xe93a;',
+		'icon-invisible': '&#xe93b;',
+		'icon-woman': '&#xe93c;',
+		'icon-male': '&#xe93d;',
+		'icon-move-down': '&#xe93e;',
+		'icon-move-up': '&#xe93f;',
+		'icon-publish': '&#xe940;',
+		'icon-account2': '&#xe926;',
+		'icon-question': '&#xe941;',
+		'icon-recharge': '&#xe942;',
+		'icon-refurbish1': '&#xe943;',
+		'icon-retransmission': '&#xe945;',
+		'icon-ruzhi': '&#xe946;',
+		'icon-time': '&#xe947;',
+		'icon-triangle': '&#xe948;',
+		'icon-success': '&#xe949;',
+		'icon-report': '&#xe94a;',
+		'icon-operation': '&#xe94b;',
+		'icon-close': '&#xe94c;',
+		'icon-required': '&#xe94d;',
+		'icon-framework': '&#xe96f;',
+		'icon-add4': '&#xe974;',
+		'icon-subtracter': '&#xe975;',
+		'icon-choice1': '&#xe968;',
+		'icon-contract': '&#xe94e;',
+		'icon-initial': '&#xe94f;',
+		'icon-salary': '&#xe950;',
+		'icon-worker': '&#xe951;',
+		'icon-rank': '&#xe952;',
+		'icon-entry': '&#xe953;',
+		'icon-post': '&#xe954;',
+		'icon-written': '&#xe955;',
+		'icon-qiyequan': '&#xe956;',
+		'icon-weixin': '&#xe957;',
+		'icon-dingding': '&#xe958;',
+		'icon-empty': '&#xe959;',
+		'icon-customer': '&#xe95b;',
+		'icon-sort': '&#xe95c;',
+		'icon-dinzhiban': '&#xe95a;',
+		'icon-standard-edition': '&#xe95d;',
+		'icon-rongyao': '&#xe961;',
+		'icon-chuangye': '&#xe96a;',
+		'icon-ultimate-edition': '&#xe963;',
+		'icon-tiyan': '&#xe973;',
+		'icon-shanchu': '&#xe962;',
+		'icon-xuanzhong': '&#xe95e;',
+		'icon-table': '&#xe964;',
+		'icon-using-edition': '&#xe966;',
+		'icon-increase': '&#xe965;',
+		'icon-direction': '&#xe95f;',
+		'icon-division': '&#xe960;',
+		'icon-announcement': '&#xe96b;',
+		'icon-attendance': '&#xe96c;',
+		'icon-organization': '&#xe96d;',
+		'icon-recruitment2': '&#xe96e;',
+		'icon-social_security': '&#xe970;',
+		'icon-staff_manages': '&#xe971;',
+		'icon-statistic_analysis': '&#xe972;',
+		'0': 0
+		},
+		els = document.getElementsByTagName('*'),
+		i, c, el;
+	for (i = 0; ; i += 1) {
+		el = els[i];
+		if(!el) {
+			break;
+		}
+		c = el.className;
+		c = c.match(/icon-[^\s'"]+/);
+		if (c && icons[c[0]]) {
+			addIcon(el, icons[c[0]]);
+		}
+	}
+}());

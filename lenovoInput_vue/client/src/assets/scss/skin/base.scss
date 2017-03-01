@@ -1,0 +1,1358 @@
+@charset "UTF-8";
+
+/* public */
+body,html {
+  background: $vi;
+}
+
+.btn{
+  background: $btnBg;
+  color: #ffffff;
+  &:link,&:visited{
+    background: $btnBg;
+  }
+  &:hover,&:active{
+    background: $btnActive;
+  }
+}
+.btn[disabled=true]{
+  &:hover{
+    background: #d5d5d5;
+  }
+}
+a,a:link,a:visited,a:hover,a:active{
+  color: $link;
+}
+.alertWin{
+  border-top: $vi solid 4px;
+}
+.icon-question{
+  color: $vi;
+}
+
+#pageBar{
+  background: $vi;
+  .menu li{
+    a{
+      color: $menuA;
+      &.active{
+        background: $menuLink!important;
+        color: #ffffff;
+        border-left:$menuLink!important solid 2px;
+      }
+      &:hover{
+        background: rgba($menuLink,.5);
+        color: #ffffff;
+        border-left:rgba($menuLink,.5) solid 2px;
+      }
+    }
+    &.menuLine{
+      background: $menuLine;
+    }
+  }
+}
+
+#header .user-set .user-menu{
+  li:hover{
+    background: $hoverLi;
+    a{
+      color: $vi;
+    }
+  }
+}
+#divisionList li:hover{
+  background: $hoverLi;
+}
+#header .people-msg i {
+  color: $vi;
+}
+
+/* table、list hover */
+.dataTables_scroll,.datatable {
+  tr th.sorting_asc{
+    &:after{
+      border-bottom: 5px solid $vi;
+    }
+  }
+  tr th.sorting_desc{
+    &:after{
+      border-top: 5px solid $vi;
+    }
+  }
+  tbody tr:hover td{
+    background-color: $hoverLi;
+  }
+  tr th .icon{
+    color: $vi;
+  }
+}
+.dataTables_paginate{
+  a.paginate_button.current{
+    color: $vi;
+    border: $vi solid 1px;
+  }
+  a.paginate_button:hover{
+    color: $vi;
+  }
+}
+
+/*li hover*/
+.toggleDropdown p:hover{
+  background: $hoverLi;
+  a{
+    color: $vi;
+  }
+  &.keywords-line{
+    background: #ffffff;
+  }
+}
+
+/*下拉菜单的dropdown 下每一条*/
+.tableHead-operate .toggleBox .toggleDropdown p:hover,
+.tableHead-operate .hireTypeSelect .toggleDropdown li:hover,
+.tableHead-operate .toggleBox .toggleDropdown li:hover{
+  background: $hoverLi;
+  div.search-option{
+    background: #ffffff!important;
+  }
+  ul{
+    background: #ffffff!important;
+  }
+  a{
+    color: $vi;
+  }
+  &.keywords-line{
+    background: #ffffff;
+  }
+}
+
+//.search-option p,.search-option li{
+//  &:hover{
+//    background: $hoverLi;
+//  }
+//}
+.search-option p:hover{
+  background: $hoverLi;
+}
+
+.search-option p.active{
+  background: $hoverLi;
+  .icon{
+    display: inline;
+    color:$vi;
+  }
+}
+
+
+/*权限*/
+.scope-list li:hover{
+  background: $hoverLi;
+}
+
+
+
+/*文档*/
+#document .tab-content li:hover ,#document .search-content li:hover{
+  background: $hoverLi;
+}
+
+/*.handsontable hover*/
+.report-container{
+  .nav-select{
+    border: $vi 1px solid;
+    color: $vi;
+  }
+}
+
+/* table、list hover */
+.dataTables_scroll,.datatable {
+  tr th.sorting_asc{
+    &:after{
+      border-bottom: 5px solid $vi;
+    }
+  }
+  tr th.sorting_desc{
+    &:after{
+      border-top: 5px solid $vi;
+    }
+  }
+  tbody tr:hover td{
+    background-color: $hoverLi;
+  }
+  tr th .icon{
+    color: $vi;
+  }
+}
+.dataTables_paginate{
+  a.paginate_button.current{
+    color: $vi;
+    border: $vi solid 1px;
+  }
+  a.paginate_button:hover{
+    color: $vi;
+  }
+}
+
+.handsontable{
+  tbody {
+    border-color: #eeeeee;
+    tr {
+      &:nth-child(even) {
+        th, td {
+          background-color: #ffffff;
+        }
+      }
+      &:nth-child(odd) {
+        th, td {
+          background-color: #fcfcfc;
+        }
+      }
+      &:hover,&.tr-hover {
+        th, td {
+          background-color: $hoverLi;
+        }
+      }
+      th {
+        background-color: #FFF;
+        height: 40px;
+        padding: auto 5px;
+        &:first-child {
+          border-left: none;
+        }
+        div {
+          padding: 10px;
+          text-align: center;
+        }
+      }
+      td {
+        padding: 10px;
+        text-align: center
+      }
+    }
+  }
+}
+#payroll-change-statistic-win .statistic-report-body .handsontable table tbody tr.tr-hover{
+  td,th{
+    background: $hoverLi;
+  }
+}
+
+.datatable tbody tr.tr-hover{
+  td,th{
+    background: $hoverLi;
+  }
+}
+
+/*弹窗 tab*/
+.portlet-body .form-box .nav-tabs li.ing{
+  border-bottom: 3px solid $link;
+  color: $link;
+}
+
+/*成长记录*/
+.operation-items{
+  border-left: 4px solid $treeLine;
+}
+.operation-content:before{
+  background: $treePoint;
+}
+.operation-content{
+  .delete-payroll-history{
+    color: $treePoint;
+  }
+}
+/*归档账套 active*/
+.pigeonhole-info.active{
+  border-bottom-color: $vi;
+
+  span.active {
+    color: $vi;
+    i {
+      color: $vi;
+    }
+  }
+}
+
+/*考勤 设置打卡*/
+.set-place-area .site-opt .site-set i{
+  color: $vi;
+}
+
+/*组织架构*/
+.jOrgChart .node{
+  background: $vi;
+}
+.jOrgChart .node .add-organization-manager.icon-add3:hover{
+  color: $vi;
+}
+.add-organization-manager .managerRemind,.jOrgChart .node .toggleChildren{
+  color: $vi;
+}
+p.department-name:hover{
+  background: $hoverLi;
+  .icon {
+    color: $vi;
+  }
+}
+.real-add-organization a {
+  color: #999999;
+  &:hover {
+    background-color: $hoverLi;
+    color: $vi;
+  }
+}
+/*收起按钮*/
+.operation-btns{
+  a{
+    background-color: $vi;
+  }
+}
+
+/*知人*/
+
+#portraitSearch {
+  .title {
+    color: $link;
+  }
+  .search-container {
+
+    .input-box {
+      border: 1px solid $link;
+    }
+    .search-btn {
+      background-color: $link;
+    }
+    .lenovo-ul {
+      li {
+        color: $link;
+      }
+
+      li:hover {
+        background-color: $hoverLi;
+      }
+
+    }
+  }
+}
+
+/*知人展示的form外的自定义样式*/
+
+.portrait{
+  .list-body{
+    ul{
+      li{
+        border-left:$treeLine solid 4px;
+        span{
+          background: $treePoint;
+        }
+        i{
+          color: $treePoint;
+        }
+        i:after{
+          border-right:5px solid $treePoint;
+        }
+        .history-text{
+          border-left:$treeLine solid 2px ;
+        }
+      }
+      li:nth-of-type(2n){
+        border-right:$treeLine solid 4px;
+        i:after{
+          border-left:5px solid $treePoint;
+        }
+        .history-text{
+          border-right:$treeLine solid 2px ;
+        }
+      }
+    }
+  }
+}
+
+/*知人工资条查看更多*/
+#portraitWin .show-more{
+  color:$link;
+}
+
+
+/*上传的按钮 批量*/
+.upload-body {
+  .webuploader-pick {
+
+    background: $btnBg;
+
+  }
+  .webuploader-pick-hover {
+    background: $btnActive;
+  }
+}
+
+/*上传图片的预览和替换*/
+
+.pic-upload.has-pic{
+  color:$link;
+  .pic-upload-btn{
+    div.upBtn{
+      .webuploader-pick{
+        color:$link
+      }
+    }
+
+  }
+}
+
+/*后增*/
+// bootstrap datepicker
+.dropdown-menu {
+
+  &.datepicker {
+    table {
+      tr {
+        td {
+          span {
+            &.active.active, &.active.disabled, &.active.disabled.active, &.active.disabled.disabled, &.active.disabled:active, &.active.disabled:hover, &.active.disabled:hover.active, &.active.disabled:hover.disabled, &.active.disabled:hover:active, &.active.disabled:hover:hover, &.active.disabled:hover[disabled], &.active.disabled[disabled], &.active:active, &.active:hover, &.active:hover.active, &.active:hover.disabled, &.active:hover:active, &.active:hover:hover, &.active:hover[disabled], &.active[disabled] {
+              background-color: $vi;
+            }
+            &.active, &.active.disabled, &.active.disabled:hover, &.active:hover {
+              background-image: linear-gradient(to bottom,$vi, $vi);
+            }
+          }
+        }
+      }
+    }
+
+  }
+}
+/*表格头部布局*/
+.tableHead-operate{
+  /*公告type*/
+  .notice-type{
+    li.active{
+      color:$link;
+    }
+  }
+  /*快速入口链接*/
+  .quick-in{
+    li{
+      a.normal-link:hover{
+        color: $link;
+        i.icon{
+          color: $link;
+        }
+      }
+    }
+  }
+  .multiple-search{
+    a.normal-link:hover{
+      color: $link;
+      i.icon{
+        color: $link;
+      }
+    }
+  }
+  /*关键字 搜索*/
+  div.keyword-search {
+    i.icon:hover {
+      color: $link;
+    }
+  }
+}
+#getCode-odd,#getCode-new{
+  background: $btnBg;
+}
+#getCode-odd:hover,#getCode-new:hover{
+  background: $btnActive;
+}
+
+/*薪酬设置 hover*/
+.my-select ul li:hover{
+  background: $hoverLi;
+  color: $vi;
+}
+///*问号提醒*/
+//#bubbleTips{
+//
+//  background: $hoverLi;
+//  &.leftShow:after{
+//    border-right: 6px solid $hoverLi;
+//  }
+//  &.rightShow:after {
+//
+//    border-left: 6px solid $hoverLi;
+//
+//  }
+//}
+/*form中编辑的小笔*/
+.portlet-body {
+  .form-box {
+    .tab-content {
+      .rows {
+        .icon.hover-icon {
+          color: $link;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+/*社保详情中的一半宽下的小笔*/
+.input-box.half-input-box:hover{
+  .icon-edit{
+    display: inline-block!important;
+    color: $link!important;
+  }
+}
+#insurance-detail-win .form-body{
+  .calculation {
+    .icon-remarks{
+      color: $link;
+    }
+  }
+  .calculation-result-tab ul li:hover{
+    .tab-hover{
+      color: $link;
+    }
+  }
+}
+
+/*计算器*/
+#insuranceCostWin{
+  .nav-tabs .activeTop{
+    border-bottom: 1px solid $link;
+    .tab-title{
+      color: $vi;
+    }
+  }
+  .needBubbleTip i{
+    color: $vi;
+  }
+}
+#wageTaxCostWin .needBubbleTip i{
+  color: $vi;
+}
+
+#employeeCostWin .rows .needBubbleTip i{
+  color: $vi;
+}
+.older-data-tip{
+  background-color: $hoverLi;
+}
+.older-data-tip:after{
+  border-right: 6px solid $hoverLi;
+}
+
+/*组织架构待分配hover*/
+#organizationWin .unappropriated:hover {
+  background-color: $hoverLi;
+}
+
+
+//组织架构新
+.dom-tree li{
+  background-color: $vi;
+}
+.dom-tree li .closeNodeBtn i{
+  color:$vi;
+}
+.dom-tree li .node-admin-btn .company_operation_list li:hover{
+  background: $hoverLi;
+}
+
+.dom-tree li .node-admin-btn:hover .icon-edit{
+  color:$vi;
+}
+
+.dom-tree li .icon-division{
+  color:$vi;
+}
+
+.dom-tree li .node-admin-btn .admin-lenovo{
+  li:hover{
+    background-color: $hoverLi;
+  }
+}
+
+// 组织架构
+#show-department-employee,
+
+// 联想搜索
+.employee-of-department-list{
+  .employee-list{
+    li.direct-child .t-head {
+      background: $hoverLi ;
+    }
+
+    li.fl.active {
+      border: 1px solid $link;
+      &:before {
+        border-top: 20px solid $link;
+      }
+    }
+
+    li.direct-child:hover{
+      border: 1px solid $link;
+    }
+  }
+}
+
+
+//#show-list-btn:hover{
+//  border:1px solid $vi;
+//  color: $vi
+//}
+#organization-operation{
+  i:hover{
+    border:1px solid $vi;
+    color: $vi
+  }
+}
+
+//.dom-list li:hover{
+//  background: $hoverLi;
+//}
+//
+//.dom-list li:hover .add-function i{
+//  color: $vi;
+//}
+//
+//.dom-list .add-function .li-department-setting .setting-option:hover{
+//  background: $hoverLi;
+//}
+//
+//.dom-list.employee-count{
+//  color:$vi;
+//}
+
+
+.moseoverOperationShow:hover .emptyBtn-point{
+  color: $link;
+}
+.datatable tr a:hover{
+  background: $hoverLi;
+}
+.trShin{
+  background: $hoverLi;
+  td{
+    background: $hoverLi !important;
+  }
+}
+.aSkin:hover{
+  background: $hoverLi;
+}
+
+//社保刷新
+.update-content-box {
+  .update-button {
+    color: $link;
+    border: 1px solid $link;
+
+  }
+  .update-button:hover{
+    background-color: $link;
+  }
+
+
+  .setting-content{
+    .show-button{
+      color:$link;
+    }
+  }
+
+}
+
+//社保刷新end
+
+
+.all-vip{
+  .every-vip{
+    .every-privilege {
+      .iconColor{
+        color: $link;
+      }
+    }
+  }
+}
+.topPicture{
+  .xp-word{
+    .icon-written2 {
+      color: $link;
+    }
+    .xp-advantage{
+      color: $link;
+    }
+    .appointmentNow{
+      background: $link;
+    }
+  }
+}
+.all-vip{
+  .openedModule{
+    .title{
+      color: $link;
+      background: $hoverLi;
+      .icon{
+
+      }
+
+    }
+  }
+}
+.middle-appointment{
+  .appointment{
+    color: $link;
+  }
+}
+.all-vip .openedModule {
+  border: 1px solid $hoverLi;
+}
+
+.all-vip .openedModule {
+  border: 1px solid $hoverLi;
+}
+.uploader-box .uploader-pic-box .pic-upload.none-pic:hover{
+  border: 1px dashed $link;
+  .pic-upload-btn{
+    .replace{
+      .icon{
+        color: $link;
+      }
+      .uploader-text{
+        color: $link;
+      }
+    }
+  }
+}
+#xp-set-body .rows .uploader-box .uploader-pic-box .pic-upload.none-pic:hover{
+  border: 1px dashed $link;
+  .pic-upload-btn{
+    .replace{
+      .icon{
+        color: $link;
+      }
+      .uploader-text{
+        color: $link;
+      }
+    }
+  }
+}
+
+/*header*/
+.head-msg{
+  border-top: 4px solid $viColor;
+}
+.nav{
+  li.active{
+    a{
+      color: $viColor;
+    }
+    border-bottom: $viColor solid 1px;
+  }
+}
+.content{
+  .left{
+    .menu{
+      background: $menuBg;
+      h2{
+        color: $viColor;
+      }
+      li.active,li:hover{
+        a{
+          background: $menuHoverBg;
+          color: #000;
+          span{
+            border-left: 5px solid $menuHoverBg;
+          }
+        }
+      }
+    }
+  }
+}
+
+.question-navWrap{
+  .questionMune{
+    li.active{
+      background: $viColor;
+    }
+  }
+}
+
+.company{
+  background: $menuBg;
+}
+/* 员工设置折叠箭头 */
+#employee-set-win .employee-set-container .section-content .require-list-wrap .require-list-title .icon {
+  color: $vi;
+}
+
+.set-payment-area .set-private-payment .input-box:hover{
+  .icon-edit{
+    color: $link ;
+  }
+}
+.approveCancel,
+.approveTransmit,
+.approvePast {
+  color: $vi;
+}
+
+
+
+//============================入职管理模块 - begin ===========================//
+.offer-breadcrumb {
+  li {
+    display: inline-block;
+    &:last-child{
+      a.active{
+        &:after{
+          display:none;
+        }
+      }
+    }
+    a.active {
+      color: #ffffff;
+      text-decoration: none;
+      padding: 3px 97px;
+      background: $vi;
+      position: relative;
+      display: inline-block;
+      &:after {
+        content: " ";
+        display: block;
+        width: 0;
+        height: 0;
+        border-top: 15px solid transparent;
+        border-bottom: 15px solid transparent;
+        border-left: 20px solid $vi;
+        position: absolute;
+        top: 50%;
+        margin-top: -15px;
+        left: 100%;
+        z-index: 2;
+      }
+      &:before {
+        content: " ";
+        display: block;
+        width: 0;
+        height: 0;
+        border-top: 15px solid transparent;
+        border-bottom: 15px solid transparent;
+        border-left: 20px solid white;
+        position: absolute;
+        top: 50%;
+        margin-top: -15px;
+        margin-left: 2px;
+        left: 100%;
+        z-index: 1;
+      }
+    }
+  }
+}
+
+// 模板管理
+.offer-management-pop {
+  .form-item .input-box .btn-tmpl {
+    .icon {
+      color: $btnBg;
+    }
+    &:hover {
+      border-color: $btnBg;
+    }
+    &.active {
+      border-color: $btnBg;
+    }
+  }
+}
+
+// offer预览
+.offer-preview-pop {
+  .preview-offer .btn-tmpl {
+    .icon {
+      color: $btnBg;
+    }
+    &:hover {
+      border-color: $btnBg;
+    }
+    &.active {
+      border-color: $btnBg;
+    }
+  }
+}
+
+// 富文本编辑器
+table.cke_dialog {
+  .cke_dialog_ui_button_ok {
+    background: $btnBg;
+    border-color: $btnBg;
+
+    &:hover {
+      background: $btnActive;
+      border-color: $btnActive;
+    }
+  }
+
+  .cke_dialog_footer_buttons a.cke_dialog_ui_button span {
+    text-shadow: none;
+  }
+}
+
+//预览offer
+#send-offer-win .preview-offer-demo .icon-edit {
+  color: $btnBg;
+}
+//============================入职管理模块 - end ===========================//
+
+
+
+
+
+//=====支付－begin======
+.recharge-detail button:hover {
+  background-color: $btnActive; }
+.recharge-detail button {
+  background-color: $btnBg;}
+#header .account-set ul li:hover {
+  background: $hoverLi;
+}
+.tab-content .recharge-btn {
+  background-color: $btnBg; }
+
+.tab-content .recharge-btn:hover {
+  background-color: $btnActive; }
+
+.no-bills{
+  color:$link;
+}
+.empty-report-remind .remind-icon .icon-report {
+  color:$link;
+}
+.empty-report-remind .remind-text {
+  color: $link;
+}
+
+
+
+//=====支付－end======
+
+.send-payroll-record{
+  color: $link;
+  border: solid $link 1px;
+}
+
+//社保刷新优化begin
+#insurance-houseFund-update-history-win .history-selection {
+  color: $link; }
+
+//社保刷新优化end
+
+
+//审批流优化
+
+#add-approve-person-win ul li.isSelected .radio-box, #edit-approve-person-win ul li.isSelected .radio-box {
+  border: 1px solid $link; }
+#add-approve-person-win ul li.isSelected .radio-box .radio-ball, #edit-approve-person-win ul li.isSelected .radio-box .radio-ball {
+  background-color: $link; }
+
+li.isSelected .radio-box .radio-ball{
+  background-color: $link !important; }
+li.isSelected .radio-box{
+  border: 1px solid $link !important;}
+
+#approve-detail-setting-win .approve-setting-node-tree .icon-increase {
+  color: $link;}
+#approve-set-win ul li .setting-btn {
+  color: $link; }
+#approve-detail-setting-win .approve-setting-node-tree li i.icon-edit {
+  color: $link; }
+#approve-detail-setting-win .approve-setting-node-tree .icon-increase {
+  color: $link; }
+#approve-detail-setting-win .approve-setting-node-tree li.final-node .final-node-tab i {
+  color: $link; }
+#approve-detail-setting-win .approve-setting-node-tree li .employee-span i.icon-add22 {
+  color: $link; }
+#approve-detail-setting-win .approve-setting-node-tree li i.icon-delete5 {
+  color: $link;}
+
+.approve-person-list li:hover {
+  background: $hoverLi; }
+
+#add-final-approve-person-win .add-final-content .approve-name-tag, #edit-final-approve-person-win .add-final-content .approve-name-tag {
+  background-color: $hoverLi;
+}
+
+.approve-operation{
+    .approve-operation-btn.transmit,.approve-operation-btn.cancelbtn,.approve-operation-btn.approve{
+        color: $link;
+    }
+}
+
+
+.approve-operation a:hover,.list-operation a:hover{
+    background-color: $hoverLi; }
+
+#custom-service{
+  background: $serviceBg;
+  i{
+    background:$serviceBg;
+  }
+}
+
+
+
+//============================招聘换肤start============================
+
+.database-list-head{
+  li.active{
+    border-bottom: 2px solid $link;
+  }
+  li:hover{
+    border-bottom: 2px solid $link;
+  }
+}
+
+.database-list-body{
+  .database-status-list{
+    li{
+      em{
+        color: $link;
+      }
+    }
+    span.active{
+      color: $link;
+    }
+    span:hover{
+      color: $link;
+    }
+  }
+}
+
+//列表主要成分
+#resume-list,#feedback-list{
+  li{
+    .resume-read-status{
+      background-color: $link;
+    }
+    .head-img{
+      background-color: darken($treeLine,0.05);
+    }
+    .base-info{
+      i.is-pass.feedback-pass{
+        color: $link;
+      }
+    }
+    .func{
+      span{
+        color: $link;
+        button{
+          border: 1px solid $link;
+          color: $link;
+        }
+        button:hover{
+          background-color: $link;
+        }
+      }
+    }
+  }
+  li:hover{
+    background: $hoverLi;
+  }
+}
+
+//============================招聘换肤end============================
+
+.database-list-head{
+  em{
+    color: $link
+  }
+}
+.add-account{
+  background-color:$btnBg
+}
+
+/* 新版消息 */
+.new-activity-box{
+  .text {
+    .poke-me {
+      color: $darkColor;
+    }
+  }
+}
+.msg-menu {
+  // 滚动条插件样式
+  .mCSB_draggerContainer {
+    .mCSB_dragger {
+      .mCSB_dragger_bar {
+        background-color: $darkColor!important;
+      }
+    }
+  }
+
+  .msg-title {
+    .unread {
+      color: $darkColor;
+    }
+  }
+
+  ul {
+    li {
+      a {
+        .msg-time {
+          color: #cacccc;
+        }
+        .msg-tit {
+          color: #454545;
+        }
+        .line {
+          background: #e3e6e6;
+        }
+        .point {
+          border: 1px solid #cacccc;
+          background: #f7fafa;
+        }
+        .arrow {
+          .icon {
+            color: $lightColor;
+          }
+        }
+
+        &:hover {
+          background: $darkColor;
+
+          .msg-time,
+          .msg-tit {
+            color: #ffffff;
+          }
+
+          .line,
+          .point {
+            background: $lightColor;
+          }
+
+          .point {
+            border: 1px solid $lightColor;
+          }
+        }
+      }
+
+      &.read-li {
+        a {
+          .msg-tit {
+            color: #cacccc;
+          }
+
+          &:hover {
+            .msg-tit {
+              color: #ffffff;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#upload-resume-win{
+  .rows{
+    .select-box{
+      .select-list{
+        li:hover{
+          background-color: $hoverLi;
+        }
+      }
+    }
+  }
+}
+
+.alertBody{
+  .rows{
+    .input-box.time-input-box{
+      .time-select{
+        li:hover{
+          background: $hoverLi;
+        }
+      }
+    }
+  }
+}
+
+//右上角显示版本
+.is-vip,.is-standard,.is-key-account,.is-dingzhi,.is-chuangye{
+  color: $serviceBg;
+}
+//=====================datable操作浮层start=======================
+.datatable-operation{
+  .datatable-operation-btn{
+    color: $link;
+  }
+  .datatable-operation-btn:hover{
+    background-color: $hoverLi;
+  }
+}
+//=====================datable操作浮层end=======================
+
+
+.lenovo-box .lenovo-list p:hover {
+  background: $hoverLi; }
+
+
+//------------员工设置鼠标经过icon换肤start------------------
+#employee-set-win{
+  .input-box {
+    .employee-operate {
+      .icon:hover {
+        color: $viColor;
+      }
+      .icon.employee-invisible,.icon.director-invisible{
+        color:$viColor;
+      }
+    }
+  }
+  .employee-edit {
+    .employeeToggleBox:hover {
+      color: $viColor;
+    }
+  }
+}
+#deal-record-win{
+  .account-intro{
+    li.intro-li{
+      em{
+        color:$lightColor;
+        border: 1px solid $lightColor;
+      }
+    }
+    li.intro-li.active{
+      border: 1px solid $lightColor;
+      .current-version{
+        background-color: $lightColor;
+        border: 1px solid $lightColor;
+      }
+      .base-info{
+        border-bottom:1px solid $lightColor;
+      }
+    }
+  }
+}
+
+#employee-detail-win .input-box .icon-account2:hover {
+  color: $link; }
+#mobile-box{
+  #toSetPhone:hover{
+    color:$link;
+  }
+}
+
+.name-tag{
+  background:$hoverLi;
+}
+
+#authorityTable{
+  tr:hover{
+    background: $hoverLi;
+    .icon-edit{
+      opacity: 100;
+    }
+    .icon-delete5{
+      opacity: 100;
+    }
+  }
+
+  tr .isSelf .icon.icon-choice1{
+    color: $link
+  }
+
+  .permission-tag{
+    background: $link;
+  }
+
+  .icon-edit:hover{
+    color: $link;
+  }
+  .icon-delete5:hover{
+    color: $link;
+  }
+
+}
+
+.archive-content .archive-info.active{
+  border-bottom: 4px solid $vi;
+
+  span.active {
+    color: $vi;
+    i {
+      color: $vi;
+    }
+  }
+}
+
+
+.welcome-dialog-detail,.welcomeOld-dialog-detail,.daley-success{
+  .version-type{
+    i{
+      color: $link;
+    }
+  }
+  h2{
+    .icon-success{
+      color: $link;
+    }
+  }
+  .experience-tip{
+    span{
+      color: $link;
+    }
+  }
+  .version-intro{
+    a{
+      color: $link;
+    }
+  }
+}
+.welcome-dialog-detail,.welcomeOld-dialog-detail,.remindTip,.daley-success{
+  .link-btn{
+    .start-experience{
+      color: #fff;
+      background: $link;
+    }
+  }
+  .content-tip{
+    span{
+      color: $link;
+    }
+  }
+}
+
+#forced-payment-logout{
+  .icon{
+    color: $link;
+  }
+}
+
+
+//联想输入
+.portlet-body .form-box .tab-content .rows .icon.icon-people:hover {
+  color: $link ;
+}
+
+//新的联想搜索
+.lenovo-box .tree-list li p span i:hover{
+  color: $link !important;
+}
+
+
+.lenovo-box .tree-list li p:hover{background: rgba($link,0.1)!important;}
+.lenovo-box .tree-list li p .icon-people:hover{color: $link !important;}
+.lenovo-box .lenovo-list{
+  li:hover,li.disabled.department:hover{ background: $hoverLi;}
+}
+.lenovo-box .lenovo-list li.department .icon-people{color:$link;}
+.lenovo-box .lenovo-list li .tit-head{background: rgba($link,.2);}
+
+//审批人联想搜索
+.input-search-lenovo li .tit-head{background: rgba($link,.2);}
+.input-search-lenovo li.department .icon-people{color:$link;}
+.input-search-lenovo{
+  li:hover,li.disabled.department:hover{ background: $hoverLi;}
+}
+
+.empty-list{
+  color: $link;
+}

@@ -1,0 +1,387 @@
+@font-face {
+  font-family: 'xrxs';
+  src:  url('fonts/xrxs.eot?1s5vpe');
+  src:  url('fonts/xrxs.eot?1s5vpe#iefix') format('embedded-opentype'),
+    url('fonts/xrxs.ttf?1s5vpe') format('truetype'),
+    url('fonts/xrxs.woff?1s5vpe') format('woff'),
+    url('fonts/xrxs.svg?1s5vpe#xrxs') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'xrxs' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-right:before {
+  content: "\e900";
+}
+.icon-left:before {
+  content: "\e901";
+}
+.icon-home:before {
+  content: "\e902";
+}
+.icon-employee:before {
+  content: "\e903";
+}
+.icon-payroll:before {
+  content: "\e904";
+}
+.icon-insuranc:before {
+  content: "\e905";
+}
+.icon-approval:before {
+  content: "\e906";
+}
+.icon-check:before {
+  content: "\e907";
+}
+.icon-assess:before {
+  content: "\e908";
+}
+.icon-recruitment:before {
+  content: "\e909";
+}
+.icon-statistics:before {
+  content: "\e90a";
+}
+.icon-notice:before {
+  content: "\e90b";
+}
+.icon-people:before {
+  content: "\e920";
+}
+.icon-edit2:before {
+  content: "\e90c";
+}
+.icon-employee-add:before {
+  content: "\e90d";
+}
+.icon-calculator:before {
+  content: "\e90e";
+}
+.icon-decrease:before {
+  content: "\e90f";
+}
+.icon-deduction:before {
+  content: "\e910";
+}
+.icon-security:before {
+  content: "\e911";
+}
+.icon-allowance:before {
+  content: "\e912";
+}
+.icon-cost:before {
+  content: "\e913";
+}
+.icon-work:before {
+  content: "\e914";
+}
+.icon-wages:before {
+  content: "\e915";
+}
+.icon-ruzhi2:before {
+  content: "\e916";
+}
+.icon-record:before {
+  content: "\e917";
+}
+.icon-archiving:before {
+  content: "\e918";
+}
+.icon-hr:before {
+  content: "\e919";
+}
+.icon-change:before {
+  content: "\e91a";
+}
+.icon-search:before {
+  content: "\e91b";
+}
+.icon-screen:before {
+  content: "\e91c";
+}
+.icon-set:before {
+  content: "\e91d";
+}
+.icon-Import:before {
+  content: "\e91e";
+}
+.icon-accounting:before {
+  content: "\e91f";
+}
+.icon-file:before {
+  content: "\e977";
+}
+.icon-annual-bonus:before {
+  content: "\e969";
+}
+.icon-download:before {
+  content: "\e921";
+}
+.icon-document1:before {
+  content: "\e922";
+}
+.icon-reminder2:before {
+  content: "\e923";
+}
+.icon-refresh:before {
+  content: "\e924";
+}
+.icon-vacation:before {
+  content: "\e925";
+}
+.icon-account1:before {
+  content: "\e927";
+}
+.icon-notice1:before {
+  content: "\e928";
+}
+.icon-phone:before {
+  content: "\e967";
+}
+.icon-quit:before {
+  content: "\e976";
+}
+.icon-person_center:before {
+  content: "\e929";
+}
+.icon-date:before {
+  content: "\e92a";
+}
+.icon-add:before {
+  content: "\e92b";
+}
+.icon-sum:before {
+  content: "\e92c";
+}
+.icon-add3:before {
+  content: "\e92d";
+}
+.icon-add22:before {
+  content: "\e92e";
+}
+.icon-choice:before {
+  content: "\e92f";
+}
+.icon-delete6:before {
+  content: "\e930";
+}
+.icon-fullscreen:before {
+  content: "\e931";
+}
+.icon-reduction:before {
+  content: "\e932";
+}
+.icon-delete5:before {
+  content: "\e933";
+}
+.icon-address:before {
+  content: "\e934";
+}
+.icon-appendix:before {
+  content: "\e935";
+}
+.icon-download2:before {
+  content: "\e936";
+}
+.icon-remarks:before {
+  content: "\e944";
+}
+.icon-edit:before {
+  content: "\e937";
+}
+.icon-hidden:before {
+  content: "\e938";
+}
+.icon-display:before {
+  content: "\e939";
+}
+.icon-visible:before {
+  content: "\e93a";
+}
+.icon-invisible:before {
+  content: "\e93b";
+}
+.icon-woman:before {
+  content: "\e93c";
+}
+.icon-male:before {
+  content: "\e93d";
+}
+.icon-move-down:before {
+  content: "\e93e";
+}
+.icon-move-up:before {
+  content: "\e93f";
+}
+.icon-publish:before {
+  content: "\e940";
+}
+.icon-account2:before {
+  content: "\e926";
+}
+.icon-question:before {
+  content: "\e941";
+}
+.icon-recharge:before {
+  content: "\e942";
+}
+.icon-refurbish1:before {
+  content: "\e943";
+}
+.icon-retransmission:before {
+  content: "\e945";
+}
+.icon-ruzhi:before {
+  content: "\e946";
+}
+.icon-time:before {
+  content: "\e947";
+}
+.icon-triangle:before {
+  content: "\e948";
+}
+.icon-success:before {
+  content: "\e949";
+}
+.icon-report:before {
+  content: "\e94a";
+}
+.icon-operation:before {
+  content: "\e94b";
+}
+.icon-close:before {
+  content: "\e94c";
+}
+.icon-required:before {
+  content: "\e94d";
+}
+.icon-framework:before {
+  content: "\e96f";
+}
+.icon-add4:before {
+  content: "\e974";
+}
+.icon-subtracter:before {
+  content: "\e975";
+}
+.icon-choice1:before {
+  content: "\e968";
+}
+.icon-contract:before {
+  content: "\e94e";
+}
+.icon-initial:before {
+  content: "\e94f";
+}
+.icon-salary:before {
+  content: "\e950";
+}
+.icon-worker:before {
+  content: "\e951";
+}
+.icon-rank:before {
+  content: "\e952";
+}
+.icon-entry:before {
+  content: "\e953";
+}
+.icon-post:before {
+  content: "\e954";
+}
+.icon-written:before {
+  content: "\e955";
+}
+.icon-qiyequan:before {
+  content: "\e956";
+}
+.icon-weixin:before {
+  content: "\e957";
+}
+.icon-dingding:before {
+  content: "\e958";
+}
+.icon-empty:before {
+  content: "\e959";
+}
+.icon-customer:before {
+  content: "\e95b";
+}
+.icon-sort:before {
+  content: "\e95c";
+}
+.icon-dinzhiban:before {
+  content: "\e95a";
+}
+.icon-standard-edition:before {
+  content: "\e95d";
+}
+.icon-rongyao:before {
+  content: "\e961";
+}
+.icon-chuangye:before {
+  content: "\e96a";
+}
+.icon-ultimate-edition:before {
+  content: "\e963";
+}
+.icon-tiyan:before {
+  content: "\e973";
+}
+.icon-shanchu:before {
+  content: "\e962";
+}
+.icon-xuanzhong:before {
+  content: "\e95e";
+}
+.icon-table:before {
+  content: "\e964";
+}
+.icon-using-edition:before {
+  content: "\e966";
+}
+.icon-increase:before {
+  content: "\e965";
+}
+.icon-direction:before {
+  content: "\e95f";
+}
+.icon-division:before {
+  content: "\e960";
+}
+.icon-announcement:before {
+  content: "\e96b";
+}
+.icon-attendance:before {
+  content: "\e96c";
+}
+.icon-organization:before {
+  content: "\e96d";
+}
+.icon-recruitment2:before {
+  content: "\e96e";
+}
+.icon-social_security:before {
+  content: "\e970";
+}
+.icon-staff_manages:before {
+  content: "\e971";
+}
+.icon-statistic_analysis:before {
+  content: "\e972";
+}
+

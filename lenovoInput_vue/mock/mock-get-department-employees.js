@@ -1,0 +1,120 @@
+/**
+ * This is a Mock demo for dev
+ * @param api: [string] rquest Url
+ * @param response: request callback
+ */
+module.exports = {
+
+    // request url
+    api: '/employee/ajax-get-department-employees',
+
+    // return
+    response: (req, res) => {
+        console.log(req.query)
+        setTimeout(function(){
+            res.send(
+            {"code":0,"message":"获取数据成功","status":true,"data":{
+                "queryPageResult":{"pageNum":1,"pageSize":50,"resultSize":2,"totalPageNum":1,
+                "data":[
+                    {"id":"1a61e36d6e0149b59e01590c4b7fb366","name":"劳务6","mobile":"19999990723","companyId":"838cdc895d3c4c75b80184adeaea8648","isSub":false,"title":"123"},
+                    {"id":"1a61e36d6e0149b59e01590c4b7fb366","name":"劳务6","mobile":"19999990723","companyId":"838cdc895d3c4c75b80184adeaea8648","isSub":false,"title":"123"},
+                    {"id":"1a61e36d6e0149b59e01590c4b7fb366","name":"劳务6","mobile":"19999990723","companyId":"838cdc895d3c4c75b80184adeaea8648","isSub":false,"title":"123"},
+                    {"id":"1a61e36d6e0149b59e01590c4b7fb366","name":"劳务6","mobile":"19999990723","companyId":"838cdc895d3c4c75b80184adeaea8648","isSub":false,"title":"123"},
+                    {"id":"1a61e36d6e0149b59e01590c4b7fb366","name":"劳务6","mobile":"19999990723","companyId":"838cdc895d3c4c75b80184adeaea8648","isSub":false,"title":"123"},
+                    {"id":"1a61e36d6e0149b59e01590c4b7fb366","name":"劳务6","mobile":"19999990723","companyId":"838cdc895d3c4c75b80184adeaea8648","isSub":false,"title":"123"},
+                    {"id":"1a61e36d6e0149b59e01590c4b7fb366","name":"劳务6","mobile":"19999990723","companyId":"838cdc895d3c4c75b80184adeaea8648","isSub":false,"title":"123"},
+                    {"id":"1a61e36d6e0149b59e01590c4b7fb366","name":"劳务6","mobile":"19999990723","companyId":"838cdc895d3c4c75b80184adeaea8648","isSub":false,"title":"123"},
+                    {"id":"1a61e36d6e0149b59e01590c4b7fb366","name":"劳务6","mobile":"19999990723","companyId":"838cdc895d3c4c75b80184adeaea8648","isSub":false,"title":"123"},
+                    {"id":"1a61e36d6e0149b59e01590c4b7fb366","name":"劳务6","mobile":"19999990723","companyId":"838cdc895d3c4c75b80184adeaea8648","isSub":false,"title":"123"},
+                    {"id":"1a61e36d6e0149b59e01590c4b7fb366","name":"劳务6","mobile":"19999990723","companyId":"838cdc895d3c4c75b80184adeaea8648","isSub":false,"title":"123"},
+                    {"id":"1a61e36d6e0149b59e01590c4b7fb366","name":"劳务6","mobile":"19999990723","companyId":"838cdc895d3c4c75b80184adeaea8648","isSub":false,"title":"123"},
+                    {"id":"1a61e36d6e0149b59e01590c4b7fb366","name":"劳务6","mobile":"19999990723","companyId":"838cdc895d3c4c75b80184adeaea8648","isSub":false,"title":"123"},
+                    {"id":"1a61e36d6e0149b59e01590c4b7fb366","name":"劳务6","mobile":"19999990723","companyId":"838cdc895d3c4c75b80184adeaea8648","isSub":false,"title":"123"},
+                    {"id":"1a61e36d6e0149b59e01590c4b7fb366","name":"劳务6","mobile":"19999990723","companyId":"838cdc895d3c4c75b80184adeaea8648","isSub":false,"title":"123"},
+                    {"id":"1a61e36d6e0149b59e01590c4b7fb366","name":"劳务6","mobile":"19999990723","companyId":"838cdc895d3c4c75b80184adeaea8648","isSub":false,"title":"123"},
+                    {"id":"1a61e36d6e0149b59e01590c4b7fb366","name":"劳务6","mobile":"19999990723","companyId":"838cdc895d3c4c75b80184adeaea8648","isSub":false,"title":"123"},
+                    {"id":"1a61e36d6e0149b59e01590c4b7fb366","name":"劳务6","mobile":"19999990723","companyId":"838cdc895d3c4c75b80184adeaea8648","isSub":false,"title":"123"},
+                    {"id":"1a61e36d6e0149b59e01590c4b7fb366","name":"劳务6","mobile":"19999990723","companyId":"838cdc895d3c4c75b80184adeaea8648","isSub":false,"title":"123"},
+                    {"id":"1a61e36d6e0149b59e01590c4b7fb366","name":"劳务6","mobile":"19999990723","companyId":"838cdc895d3c4c75b80184adeaea8648","isSub":false,"title":"123"},
+                    {"id":"1a61e36d6e0149b59e01590c4b7fb366","name":"劳务6","mobile":"19999990723","companyId":"838cdc895d3c4c75b80184adeaea8648","isSub":false,"title":"123"},
+                    {"id":"1a61e36d6e0149b59e01590c4b7fb366","name":"劳务6","mobile":"19999990723","companyId":"838cdc895d3c4c75b80184adeaea8648","isSub":false,"title":"123"},
+                    {"id":"1a61e36d6e0149b59e01590c4b7fb366","name":"劳务6","mobile":"19999990723","companyId":"838cdc895d3c4c75b80184adeaea8648","isSub":false,"title":"123"},
+                    {"id":"1a61e36d6e0149b59e01590c4b7fb366","name":"劳务6","mobile":"19999990723","companyId":"838cdc895d3c4c75b80184adeaea8648","isSub":false,"title":"123"},
+                    {"id":"1a61e36d6e0149b59e01590c4b7fb366","name":"劳务6","mobile":"19999990723","companyId":"838cdc895d3c4c75b80184adeaea8648","isSub":false,"title":"123"},
+                    {"id":"1a61e36d6e0149b59e01590c4b7fb366","name":"劳务6","mobile":"19999990723","companyId":"838cdc895d3c4c75b80184adeaea8648","isSub":false,"title":"123"},
+                    {"id":"1a61e36d6e0149b59e01590c4b7fb366","name":"劳务6","mobile":"19999990723","companyId":"838cdc895d3c4c75b80184adeaea8648","isSub":false,"title":"123"},
+                    {"id":"1a61e36d6e0149b59e01590c4b7fb366","name":"劳务6","mobile":"19999990723","companyId":"838cdc895d3c4c75b80184adeaea8648","isSub":false,"title":"123"},
+                    {"id":"1a61e36d6e0149b59e01590c4b7fb366","name":"劳务6","mobile":"19999990723","companyId":"838cdc895d3c4c75b80184adeaea8648","isSub":false,"title":"123"},
+                    {"id":"1a61e36d6e0149b59e01590c4b7fb366","name":"劳务6","mobile":"19999990723","companyId":"838cdc895d3c4c75b80184adeaea8648","isSub":false,"title":"123"},
+                    {"id":"1a61e36d6e0149b59e01590c4b7fb366","name":"劳务6","mobile":"19999990723","companyId":"838cdc895d3c4c75b80184adeaea8648","isSub":false,"title":"123"},
+                    {"id":"1a61e36d6e0149b59e01590c4b7fb366","name":"劳务6","mobile":"19999990723","companyId":"838cdc895d3c4c75b80184adeaea8648","isSub":false,"title":"123"},
+                    {"id":"1a61e36d6e0149b59e01590c4b7fb366","name":"劳务6","mobile":"19999990723","companyId":"838cdc895d3c4c75b80184adeaea8648","isSub":false,"title":"123"},
+                    {"id":"1a61e36d6e0149b59e01590c4b7fb366","name":"劳务6","mobile":"19999990723","companyId":"838cdc895d3c4c75b80184adeaea8648","isSub":false,"title":"123"},
+                    {"id":"1a61e36d6e0149b59e01590c4b7fb366","name":"劳务6","mobile":"19999990723","companyId":"838cdc895d3c4c75b80184adeaea8648","isSub":false,"title":"123"},
+                    {"id":"1a61e36d6e0149b59e01590c4b7fb366","name":"劳务6","mobile":"19999990723","companyId":"838cdc895d3c4c75b80184adeaea8648","isSub":false,"title":"123"},
+                    {"id":"1a61e36d6e0149b59e01590c4b7fb366","name":"劳务6","mobile":"19999990723","companyId":"838cdc895d3c4c75b80184adeaea8648","isSub":false,"title":"123"},
+                    {"id":"1a61e36d6e0149b59e01590c4b7fb366","name":"劳务6","mobile":"19999990723","companyId":"838cdc895d3c4c75b80184adeaea8648","isSub":false,"title":"123"},
+                    {"id":"1a61e36d6e0149b59e01590c4b7fb366","name":"劳务6","mobile":"19999990723","companyId":"838cdc895d3c4c75b80184adeaea8648","isSub":false,"title":"123"},
+                    {"id":"1a61e36d6e0149b59e01590c4b7fb366","name":"劳务6","mobile":"19999990723","companyId":"838cdc895d3c4c75b80184adeaea8648","isSub":false,"title":"123"},
+                    {"id":"1a61e36d6e0149b59e01590c4b7fb366","name":"劳务6","mobile":"19999990723","companyId":"838cdc895d3c4c75b80184adeaea8648","isSub":false,"title":"123"},
+                    {"id":"1a61e36d6e0149b59e01590c4b7fb366","name":"劳务6","mobile":"19999990723","companyId":"838cdc895d3c4c75b80184adeaea8648","isSub":false,"title":"123"},
+                    {"id":"1a61e36d6e0149b59e01590c4b7fb366","name":"劳务6","mobile":"19999990723","companyId":"838cdc895d3c4c75b80184adeaea8648","isSub":false,"title":"123"},
+                    {"id":"1a61e36d6e0149b59e01590c4b7fb366","name":"劳务6","mobile":"19999990723","companyId":"838cdc895d3c4c75b80184adeaea8648","isSub":false,"title":"123"},
+                    {"id":"1a61e36d6e0149b59e01590c4b7fb366","name":"劳务6","mobile":"19999990723","companyId":"838cdc895d3c4c75b80184adeaea8648","isSub":false,"title":"123"},
+                    {"id":"1a61e36d6e0149b59e01590c4b7fb366","name":"劳务6","mobile":"19999990723","companyId":"838cdc895d3c4c75b80184adeaea8648","isSub":false,"title":"123"},
+                    {"id":"1a61e36d6e0149b59e01590c4b7fb366","name":"劳务6","mobile":"19999990723","companyId":"838cdc895d3c4c75b80184adeaea8648","isSub":false,"title":"123"},
+                    {"id":"1a61e36d6e0149b59e01590c4b7fb366","name":"劳务6","mobile":"19999990723","companyId":"838cdc895d3c4c75b80184adeaea8648","isSub":false,"title":"123"},
+                    {"id":"1a61e36d6e0149b59e01590c4b7fb366","name":"劳务6","mobile":"19999990723","companyId":"838cdc895d3c4c75b80184adeaea8648","isSub":false,"title":"123"},
+                    {"id":"1a61e36d6e0149b59e01590c4b7fb366","name":"劳务6","mobile":"19999990723","companyId":"838cdc895d3c4c75b80184adeaea8648","isSub":false,"title":"123"},
+                    {"id":"1a61e36d6e0149b59e01590c4b7fb366","name":"劳务6","mobile":"19999990723","companyId":"838cdc895d3c4c75b80184adeaea8648","isSub":false,"title":"123"},
+                    {"id":"1a61e36d6e0149b59e01590c4b7fb366","name":"劳务6","mobile":"19999990723","companyId":"838cdc895d3c4c75b80184adeaea8648","isSub":false,"title":"123"},
+                    {"id":"1a61e36d6e0149b59e01590c4b7fb366","name":"劳务6","mobile":"19999990723","companyId":"838cdc895d3c4c75b80184adeaea8648","isSub":false,"title":"123"},
+                    {"id":"1a61e36d6e0149b59e01590c4b7fb366","name":"劳务6","mobile":"19999990723","companyId":"838cdc895d3c4c75b80184adeaea8648","isSub":false,"title":"123"},
+                    {"id":"1a61e36d6e0149b59e01590c4b7fb366","name":"劳务6","mobile":"19999990723","companyId":"838cdc895d3c4c75b80184adeaea8648","isSub":false,"title":"123"},
+                    {"id":"1a61e36d6e0149b59e01590c4b7fb366","name":"劳务6","mobile":"19999990723","companyId":"838cdc895d3c4c75b80184adeaea8648","isSub":false,"title":"123"},
+                    {"id":"1a61e36d6e0149b59e01590c4b7fb366","name":"劳务6","mobile":"19999990723","companyId":"838cdc895d3c4c75b80184adeaea8648","isSub":false,"title":"123"},
+                    {"id":"1a61e36d6e0149b59e01590c4b7fb366","name":"劳务6","mobile":"19999990723","companyId":"838cdc895d3c4c75b80184adeaea8648","isSub":false,"title":"123"},
+                    {"id":"1a61e36d6e0149b59e01590c4b7fb366","name":"劳务6","mobile":"19999990723","companyId":"838cdc895d3c4c75b80184adeaea8648","isSub":false,"title":"123"},
+                    {"id":"1a61e36d6e0149b59e01590c4b7fb366","name":"劳务6","mobile":"19999990723","companyId":"838cdc895d3c4c75b80184adeaea8648","isSub":false,"title":"123"},
+                    {"id":"1a61e36d6e0149b59e01590c4b7fb366","name":"劳务6","mobile":"19999990723","companyId":"838cdc895d3c4c75b80184adeaea8648","isSub":false,"title":"123"},
+                    {"id":"1a61e36d6e0149b59e01590c4b7fb366","name":"劳务6","mobile":"19999990723","companyId":"838cdc895d3c4c75b80184adeaea8648","isSub":false,"title":"123"},
+                    {"id":"1a61e36d6e0149b59e01590c4b7fb366","name":"劳务6","mobile":"19999990723","companyId":"838cdc895d3c4c75b80184adeaea8648","isSub":false,"title":"123"},
+                    {"id":"1a61e36d6e0149b59e01590c4b7fb366","name":"劳务6","mobile":"19999990723","companyId":"838cdc895d3c4c75b80184adeaea8648","isSub":false,"title":"123"},
+                    {"id":"1a61e36d6e0149b59e01590c4b7fb366","name":"劳务6","mobile":"19999990723","companyId":"838cdc895d3c4c75b80184adeaea8648","isSub":false,"title":"123"},
+                    {"id":"1a61e36d6e0149b59e01590c4b7fb366","name":"劳务6","mobile":"19999990723","companyId":"838cdc895d3c4c75b80184adeaea8648","isSub":false,"title":"123"},
+                    {"id":"1a61e36d6e0149b59e01590c4b7fb366","name":"劳务6","mobile":"19999990723","companyId":"838cdc895d3c4c75b80184adeaea8648","isSub":false,"title":"123"},
+                    {"id":"1a61e36d6e0149b59e01590c4b7fb366","name":"劳务6","mobile":"19999990723","companyId":"838cdc895d3c4c75b80184adeaea8648","isSub":false,"title":"123"},
+                    {"id":"1a61e36d6e0149b59e01590c4b7fb366","name":"劳务6","mobile":"19999990723","companyId":"838cdc895d3c4c75b80184adeaea8648","isSub":false,"title":"123"},
+                    {"id":"1a61e36d6e0149b59e01590c4b7fb366","name":"劳务6","mobile":"19999990723","companyId":"838cdc895d3c4c75b80184adeaea8648","isSub":false,"title":"123"},
+                    {"id":"1a61e36d6e0149b59e01590c4b7fb366","name":"劳务6","mobile":"19999990723","companyId":"838cdc895d3c4c75b80184adeaea8648","isSub":false,"title":"123"},
+                    {"id":"1a61e36d6e0149b59e01590c4b7fb366","name":"劳务6","mobile":"19999990723","companyId":"838cdc895d3c4c75b80184adeaea8648","isSub":false,"title":"123"},
+                    {"id":"1a61e36d6e0149b59e01590c4b7fb366","name":"劳务6","mobile":"19999990723","companyId":"838cdc895d3c4c75b80184adeaea8648","isSub":false,"title":"123"},
+                    {"id":"1a61e36d6e0149b59e01590c4b7fb366","name":"劳务6","mobile":"19999990723","companyId":"838cdc895d3c4c75b80184adeaea8648","isSub":false,"title":"123"},
+                    {"id":"1a61e36d6e0149b59e01590c4b7fb366","name":"劳务6","mobile":"19999990723","companyId":"838cdc895d3c4c75b80184adeaea8648","isSub":false,"title":"123"},
+                    {"id":"1a61e36d6e0149b59e01590c4b7fb366","name":"劳务6","mobile":"19999990723","companyId":"838cdc895d3c4c75b80184adeaea8648","isSub":false,"title":"123"},
+                    {"id":"1a61e36d6e0149b59e01590c4b7fb366","name":"劳务6","mobile":"19999990723","companyId":"838cdc895d3c4c75b80184adeaea8648","isSub":false,"title":"123"},
+                    {"id":"1a61e36d6e0149b59e01590c4b7fb366","name":"劳务6","mobile":"19999990723","companyId":"838cdc895d3c4c75b80184adeaea8648","isSub":false,"title":"123"},
+                    {"id":"1a61e36d6e0149b59e01590c4b7fb366","name":"劳务6","mobile":"19999990723","companyId":"838cdc895d3c4c75b80184adeaea8648","isSub":false,"title":"123"},
+                    {"id":"1a61e36d6e0149b59e01590c4b7fb366","name":"劳务6","mobile":"19999990723","companyId":"838cdc895d3c4c75b80184adeaea8648","isSub":false,"title":"123"},
+                    {"id":"1a61e36d6e0149b59e01590c4b7fb366","name":"劳务6","mobile":"19999990723","companyId":"838cdc895d3c4c75b80184adeaea8648","isSub":false,"title":"123"},
+                    {"id":"1a61e36d6e0149b59e01590c4b7fb366","name":"劳务6","mobile":"19999990723","companyId":"838cdc895d3c4c75b80184adeaea8648","isSub":false,"title":"123"},
+                    {"id":"1a61e36d6e0149b59e01590c4b7fb366","name":"劳务6","mobile":"19999990723","companyId":"838cdc895d3c4c75b80184adeaea8648","isSub":false,"title":"123"},
+                    {"id":"1a61e36d6e0149b59e01590c4b7fb366","name":"劳务6","mobile":"19999990723","companyId":"838cdc895d3c4c75b80184adeaea8648","isSub":false,"title":"123"},
+                    {"id":"1a61e36d6e0149b59e01590c4b7fb366","name":"劳务6","mobile":"19999990723","companyId":"838cdc895d3c4c75b80184adeaea8648","isSub":false,"title":"123"},
+                    {"id":"1a61e36d6e0149b59e01590c4b7fb366","name":"劳务6","mobile":"19999990723","companyId":"838cdc895d3c4c75b80184adeaea8648","isSub":false,"title":"123"},
+                    {"id":"1a61e36d6e0149b59e01590c4b7fb366","name":"劳务6","mobile":"19999990723","companyId":"838cdc895d3c4c75b80184adeaea8648","isSub":false,"title":"123"},
+                    {"id":"1a61e36d6e0149b59e01590c4b7fb366","name":"劳务6","mobile":"19999990723","companyId":"838cdc895d3c4c75b80184adeaea8648","isSub":false,"title":"123"},
+                    {"id":"1a61e36d6e0149b59e01590c4b7fb366","name":"劳务6","mobile":"19999990723","companyId":"838cdc895d3c4c75b80184adeaea8648","isSub":false,"title":"123"},
+                    {"id":"1a61e36d6e0149b59e01590c4b7fb366","name":"劳务6","mobile":"19999990723","companyId":"838cdc895d3c4c75b80184adeaea8648","isSub":false,"title":"123"},
+                    {"id":"1a61e36d6e0149b59e01590c4b7fb366","name":"劳务6","mobile":"19999990723","companyId":"838cdc895d3c4c75b80184adeaea8648","isSub":false,"title":"123"},
+                    {"id":"1a61e36d6e0149b59e01590c4b7fb366","name":"劳务6","mobile":"19999990723","companyId":"838cdc895d3c4c75b80184adeaea8648","isSub":false,"title":"123"},
+                    {"id":"1a61e36d6e0149b59e01590c4b7fb366","name":"劳务6","mobile":"19999990723","companyId":"838cdc895d3c4c75b80184adeaea8648","isSub":false,"title":"123"},
+                    {"id":"1a61e36d6e0149b59e01590c4b7fb366","name":"劳务6","mobile":"19999990723","companyId":"838cdc895d3c4c75b80184adeaea8648","isSub":false,"title":"123"},
+                    {"id":"1a61e36d6e0149b59e01590c4b7fb366","name":"劳务6","mobile":"19999990723","companyId":"838cdc895d3c4c75b80184adeaea8648","isSub":false,"title":"123"},
+                    
+                    {"id":"f9297361e1a7439eb0c33cbb7ec801e3","name":"华南虎","mobile":"19999990711","companyId":"838cdc895d3c4c75b80184adeaea8648","isSub":true,"title":"123"}
+                    ]},"departmentName":"sdg"}})
+        },1000) 
+    }
+}
+
